@@ -47,3 +47,6 @@ node_modules
 .next
 .env.local
 .DS_Store
+
+# AWS Lambda deployment package; rebuild it from lambda-function/ when deploying
+lambda-function/function.zip
