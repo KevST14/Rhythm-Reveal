@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # next lint crashes while writing its cache ("Cannot serialize key
+      # "parse" in parser") with this ESLint setup, and CI starts clean anyway.
+      - run: npm run lint -- --no-cache
+      - run: npm run build
+        env:
+          # Placeholders so next build can load the API routes; nothing
+          # connects to them.
+          SPOTIFY_CLIENT_ID: ci-placeholder
+          SPOTIFY_CLIENT_SECRET: ci-placeholder
+          NEXTAUTH_SECRET: ci-placeholder
+          NEXTAUTH_URL: http://localhost:3000
+          MONGODB_URI: mongodb://localhost:27017/rhythm-reveal
