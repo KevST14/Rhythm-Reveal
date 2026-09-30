@@ -1,3 +1,16 @@
+# Rhythm Reveal
+
+[![CI](https://github.com/KevST14/Rhythm-Reveal/actions/workflows/ci.yml/badge.svg)](https://github.com/KevST14/Rhythm-Reveal/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/github/license/KevST14/Rhythm-Reveal)](LICENSE)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
+![Spotify API](https://img.shields.io/badge/Spotify_API-1DB954?logo=spotify&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900)
+![Last commit](https://img.shields.io/github/last-commit/KevST14/Rhythm-Reveal)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
